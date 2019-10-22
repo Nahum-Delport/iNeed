@@ -1,0 +1,173 @@
+body {
+  font-family: 'Hepta Slab', serif;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 0px;
+  padding: 8px;
+  
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.header {
+  background-color: rgb(76, 179, 76);
+  border-radius: 12px;
+}
+.search {
+  border-bottom: 1.8px solid yellow;
+  width: 20%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.selector {
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  padding: 4px;
+  background-color: rgb(76, 179, 76);
+  border-radius: 10px;
+  outline: none;
+}
+.selector:focus {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.searchBar {
+  border: 0.9px solid grey;
+  text-align: center;
+  border-radius: 10px;
+  padding: 4px;
+  margin-right: 1%;
+  outline: none;
+  
+}
+.sub {
+  border-radius: 10px;
+  background-color: yellow;
+  margin-left: 8px;
+  padding: 4px;
+  border: 0.9px solid grey;
+}
+.sub:hover {
+  cursor: pointer;
+  background-color: orange;
+}
+button, input {
+  outline: none;
+}
+/* Table */
+
+table {
+  border-collapse: collapse;
+  padding:4px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 16px;
+  width: 100%;
+  height: 100%;
+}
+tr:nth-child(even) {
+  background-color: rgba(165, 165, 165, 0.63);
+}
+thead {
+  background-color: rgba(128, 128, 128, 0.068);
+}
+td {
+  height: 200px;
+}
+tr {
+  transition: background-color 0.8s;
+}
+tr:nth-child(odd):hover {
+  background-color: rgba(255, 255, 0, 0.74);
+}
+tr:nth-child(even):hover {
+  background-color: rgb(76, 179, 76);
+}
+audio, video {
+  outline: none;
+}
+video {
+  height: 220px;
+  width: 220px;
+  padding-bottom: 20px;
+}
+
+#loading {
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  margin-top: 4px;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px; 
+}
+
+.radioBtn {
+  border-radius: 25px;
+  border: 1px solid white;
+  padding: 4px;
+  margin: 4px;
+  transition: border 1s;
+
+}
+.radioBtn:hover {
+  border: 1px solid grey;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+li {
+  float: right;
+  list-style: none;
+  width: 180px;
+  height: 20px;
+  text-decoration: none;
+  transition: color 1s;
+}
+li:link {
+  text-decoration: none;
+}
+li:hover {
+  color: yellow;
+}
+li:visited {
+  color: black;
+}
+
+#icon {
+  font-size: 40px;
+}
+.buttonIcon {
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  border-color: rgba(255, 255, 255, 0);
+  transition: color 2.4s;
+}
+.buttonIcon:hover {
+  color: red;
+}
