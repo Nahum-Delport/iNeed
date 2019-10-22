@@ -9,8 +9,6 @@ var array1 = require('./Favourite.json');
 
 app.use(helmet());
 
-
-
 app.get('/api', function (req, res) {
     let term = req.query.search;
     let entity = req.query.type;
@@ -31,24 +29,6 @@ app.get('/api', function (req, res) {
     console.log("working")
 })
 
-// app.post('/api/favourites', function(req, res) {
-   
-//     array1.push(req.body)
-//     fs.writeFile('Favourite.json', JSON.stringify(array1), (err) => {
-//         if (err) {
-//             res.send(`File not created`)
-//         }
-//         console.log('File created/updated')
-//         res.send(`File Updated/Created`)
-//     })
-// })
-
-// app.get('/api/favourites', function(req, res) {
-//     fs.readFile('Favourite.json', function(err, data) {
-//         data = JSON.parse(data)
-//         res.send(data)
-//     })
-// })
 app.use(express.static(path.join(__dirname, 'app/build')))
 
 app.get('*', (req, res) => {
